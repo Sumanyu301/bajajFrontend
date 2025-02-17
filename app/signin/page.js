@@ -39,7 +39,7 @@ export default function SignUp() {
             </div>
           </div>
 
-          {/* Email */}
+          {/* DOB */}
           <div className="mb-4">
             <label
               className="block mb-2 text-sm font-bold text-gray-700"
