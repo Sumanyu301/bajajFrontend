@@ -43,17 +43,18 @@ export default function SignUp() {
           <div className="mb-4">
             <label
               className="block mb-2 text-sm font-bold text-gray-700"
-              htmlFor="email"
+              htmlFor="dob"
             >
-              Email
+              Date of Birth
             </label>
             <input
-              id="email"
-              type="email"
-              placeholder="Email"
+              id="dob"
+              type="date"
               className="w-full px-3 py-2 border rounded shadow focus:outline-none focus:ring-2 focus:ring-indigo-400"
             />
           </div>
+
+          {/* Mobile */}
           <div className="mb-4">
             <label
               className="block mb-2 text-sm font-bold text-gray-700"
@@ -63,10 +64,32 @@ export default function SignUp() {
             </label>
             <input
               id="mobile"
-              type="mobile"
+              type="text"
               placeholder="Mobile"
               className="w-full px-3 py-2 border rounded shadow focus:outline-none focus:ring-2 focus:ring-indigo-400"
             />
+          </div>
+
+          {/* Gender Dropdown */}
+          <div className="mb-4">
+            <label
+              className="block mb-2 text-sm font-bold text-gray-700"
+              htmlFor="gender"
+            >
+              Gender
+            </label>
+            <select
+              id="gender"
+              defaultValue=""
+              className="w-full px-3 py-2 border rounded shadow focus:outline-none focus:ring-2 focus:ring-indigo-400"
+            >
+              <option value="" disabled>
+                Select your Gender
+              </option>
+              <option value="Male">Male</option>
+              <option value="Female">Female</option>
+              <option value="Other">Other</option>
+            </select>
           </div>
 
           {/* Password & Confirm Password */}
